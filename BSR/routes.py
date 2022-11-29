@@ -39,6 +39,6 @@ def bankStatement():
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp = jsonify({'message' : 'Allowed file types are pdf'})
         resp.status_code = 400
         return resp

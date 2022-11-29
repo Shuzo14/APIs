@@ -40,7 +40,7 @@ def aadhar():
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
 
@@ -70,7 +70,7 @@ def pan():
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
 
@@ -100,7 +100,7 @@ def dlic():
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are txt, pdf, png, jpg, jpeg, gif'})
+        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
 
