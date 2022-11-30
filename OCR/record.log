@@ -7,3 +7,299 @@ INFO:werkzeug: * Debugger PIN: 833-680-483
 INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:00:06] "POST /ocr/dlic HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:00:25] "POST /ocr/pan HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:00:40] "POST /ocr/aadhar HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:50:23] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:55:01] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:56:01] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 11:57:51] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:01:12] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:01:53] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:02:33] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:03:39] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:04:01] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:04:27] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:05:06] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:05:22] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:05:33] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:05:53] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:06:53] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:09:49] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:10:22] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:14:24] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:14:51] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:15:03] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:15:11] "POST /ocr/voter HTTP/1.1" 200 -
+DEBUG:PIL.Image:Importing BlpImagePlugin
+DEBUG:PIL.Image:Importing BmpImagePlugin
+DEBUG:PIL.Image:Importing BufrStubImagePlugin
+DEBUG:PIL.Image:Importing CurImagePlugin
+DEBUG:PIL.Image:Importing DcxImagePlugin
+DEBUG:PIL.Image:Importing DdsImagePlugin
+DEBUG:PIL.Image:Importing EpsImagePlugin
+DEBUG:PIL.Image:Importing FitsImagePlugin
+DEBUG:PIL.Image:Importing FitsStubImagePlugin
+DEBUG:PIL.Image:Importing FliImagePlugin
+DEBUG:PIL.Image:Importing FpxImagePlugin
+DEBUG:PIL.Image:Image: failed to import FpxImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing FtexImagePlugin
+DEBUG:PIL.Image:Importing GbrImagePlugin
+DEBUG:PIL.Image:Importing GifImagePlugin
+DEBUG:PIL.Image:Importing GribStubImagePlugin
+DEBUG:PIL.Image:Importing Hdf5StubImagePlugin
+DEBUG:PIL.Image:Importing IcnsImagePlugin
+DEBUG:PIL.Image:Importing IcoImagePlugin
+DEBUG:PIL.Image:Importing ImImagePlugin
+DEBUG:PIL.Image:Importing ImtImagePlugin
+DEBUG:PIL.Image:Importing IptcImagePlugin
+DEBUG:PIL.Image:Importing JpegImagePlugin
+DEBUG:PIL.Image:Importing Jpeg2KImagePlugin
+DEBUG:PIL.Image:Importing McIdasImagePlugin
+DEBUG:PIL.Image:Importing MicImagePlugin
+DEBUG:PIL.Image:Image: failed to import MicImagePlugin: No module named 'olefile'
+DEBUG:PIL.Image:Importing MpegImagePlugin
+DEBUG:PIL.Image:Importing MpoImagePlugin
+DEBUG:PIL.Image:Importing MspImagePlugin
+DEBUG:PIL.Image:Importing PalmImagePlugin
+DEBUG:PIL.Image:Importing PcdImagePlugin
+DEBUG:PIL.Image:Importing PcxImagePlugin
+DEBUG:PIL.Image:Importing PdfImagePlugin
+DEBUG:PIL.Image:Importing PixarImagePlugin
+DEBUG:PIL.Image:Importing PngImagePlugin
+DEBUG:PIL.Image:Importing PpmImagePlugin
+DEBUG:PIL.Image:Importing PsdImagePlugin
+DEBUG:PIL.Image:Importing SgiImagePlugin
+DEBUG:PIL.Image:Importing SpiderImagePlugin
+DEBUG:PIL.Image:Importing SunImagePlugin
+DEBUG:PIL.Image:Importing TgaImagePlugin
+DEBUG:PIL.Image:Importing TiffImagePlugin
+DEBUG:PIL.Image:Importing WebPImagePlugin
+DEBUG:PIL.Image:Importing WmfImagePlugin
+DEBUG:PIL.Image:Importing XbmImagePlugin
+DEBUG:PIL.Image:Importing XpmImagePlugin
+DEBUG:PIL.Image:Importing XVThumbImagePlugin
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:15:19] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:15:44] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:15:54] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:16:18] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:16:46] "[35m[1mPOST /ocr/voter HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:17:02] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_voter.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:18:57] "POST /ocr/voter HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
