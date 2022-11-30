@@ -162,7 +162,4 @@ def bank_statement_read(file_path, bank_name):
     except:
         a = {'status':'Failed', 'message': 'PDF is not redable' }
         return a
-
-
-
     
