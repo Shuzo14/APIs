@@ -37,9 +37,9 @@ def vehicleRC_read_data(image):
                         #print(dob)
                     
                 dl_data = {
-                'DL data' : lines,
-                'DL Number' : dl_number,
-                'DOB' : dl_dob
+                'dl_data' : lines,
+                'dl_number' : dl_number,
+                'dl_dob' : dl_dob
                 }
                 
                 return dl_data
