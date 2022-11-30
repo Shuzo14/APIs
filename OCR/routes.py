@@ -4,6 +4,7 @@ from werkzeug.utils import secure_filename
 from ocr_aadhar import aadhar_read_data
 from ocr_dl import vehicleRC_read_data
 from ocr_pan import pan_read_data
+from ocr_voter import voterid_read_data
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
@@ -97,6 +98,36 @@ def dlic():
         resp = jsonify({'message' : 'File successfully uploaded'})
         resp.status_code = 201
         aadhar_data = vehicleRC_read_data(file)
+        return aadhar_data
+    
+    else:
+        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
+        resp.status_code = 400
+        return resp
+
+def voter():
+    
+    if 'file' not in request.files:
+        resp = jsonify({'message':'No file part in the request'})
+        resp.status_code = 400
+        return resp
+    
+    file = request.files['file']
+    
+    if file.filename == '':
+        resp = jsonify({'message':'No file selected for uploading'})
+        resp.status_code = 400
+        return resp
+    
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        timestr = time.strftime("%Y%m%d-%H%M%S")
+        
+        file.save(os.path.join('/tmp/', filename))
+        os.rename('/tmp/'+filename, '/tmp/'+timestr+".png")
+        resp = jsonify({'message' : 'File successfully uploaded'})
+        resp.status_code = 201
+        aadhar_data = voterid_read_data(file)
         return aadhar_data
     
     else:
