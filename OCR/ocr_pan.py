@@ -104,13 +104,13 @@ def pan_read_data(image):
 
             else:
                 a = {'status':'Failed', 'message': 'Please provide a pan card image'}
-                return json.dumps(a)
+                return a
 
         except:
             a = {'status':'Failed', 'message': 'Invalid Image' }
-            return json.dumps(a)
+            return a
 
     except:
         a = {'status':'Failed', 'message': 'Invalid Image' }
-        return json.dumps(a)
+        return a
 

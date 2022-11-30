@@ -140,20 +140,21 @@ def bank_statement_read(file_path, bank_name):
         bankData = data.T; data_json = bankData.to_json(); upi_json = UPI.T.to_json(); sal_json = salary.T.to_json(); neft_json = NEFT.T.to_json(); imps_json = IMPS.T.to_json(); nach_json = NACH.T.to_json()
         json_list = [data_json, sal_json, upi_json, nach_json, neft_json, imps_json]; 
         json_out = json_bankstatements(json_list)
-        
-        all_print = '{'+'"statements"'+':'+str(json_out[0])+'}'
-        sal_print = '{'+'"Salary"'+':'+str(json_out[1])+'}'
-        upi_print = '{'+'"UPI"'+':'+str(json_out[2])+'}'
-        nach_print = '{'+'"NACH"'+':'+str(json_out[3])+'}'
-        neft_print = '{'+'"NEFT"'+':'+str(json_out[4])+'}'
-        imps_print = '{'+'"IMPS"'+':'+str(json_out[5])+'}'
-        
-        required_data='{'+'"bank-statement"'+':['+all_print+','+sal_print+','+upi_print+','+nach_print+','+neft_print+','+imps_print+']}'
-        return required_data
+
+        bsr_data = {
+            "statements" : json_out[0],
+            "salary" : json_out[1],
+            "upi" : json_out[2],
+            "nach" : json_out[3],
+            "neft" : json_out[4],
+            "imps" : json_out[5]
+        }
+
+        return bsr_data
     
     except:
         a = {'status':'Failed', 'message': 'PDF is not redable' }
-        return json.dumps(a)
+        return a
 
 
 
