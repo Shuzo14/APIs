@@ -312,3 +312,10 @@ INFO:werkzeug: * Debugger PIN: 833-680-483
 INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:20:58] "POST /ocr/pan HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_dl.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
+INFO:werkzeug:127.0.0.1 - - [30/Nov/2022 12:23:29] "POST /ocr/pan HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\VSK\\Documents\\APIs\\APIs\\OCR\\ocr_dl.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-680-483
