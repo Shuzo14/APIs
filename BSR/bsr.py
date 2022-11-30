@@ -69,11 +69,14 @@ def bank_statement_read(file_path, bank_name):
             if len(row_index) == 0:
                 lst_no = 0 if len(df_list) <= 4 else 4; data1 = df_list[1]; data2 = df_list[2]; data3 = df_list[lst_no]
                 data1_columns = []; data2_columns = []; data3_columns = []; 
+                
                 page_data1 = data1.values.tolist(); page_data2 = data2.values.tolist(); page_data3 = data3.values.tolist(); 
                 data1_cols = data1.columns; data2_cols = data2.columns; data3_cols = data3.columns; 
+                
                 data1_columns = unknown_columns(data1_cols,col_list); data1_count = op.countOf(data1_columns,'Unknown_column')
                 data2_columns = unknown_columns(data2_cols,col_list); data2_count = op.countOf(data1_columns,'Unknown_column')
                 data3_columns = unknown_columns(data3_cols,col_list); data3_count = op.countOf(data1_columns,'Unknown_column')
+                
                 data_uc_count = [data1_count,data2_count,data3_count]; min_uc_index = data_uc_count.index(min(data_uc_count))
                 dict_cols = {0:data1_columns,1:data2_columns,2:data3_columns}; dict_data = {0:data1,1:data2,2:data3}
                 data_tab_cols = dict_cols[min_uc_index]; data_first = dict_data[min_uc_index]; page_data0 = data_first.values.tolist()
@@ -82,17 +85,21 @@ def bank_statement_read(file_path, bank_name):
                 
                 for ls in range(len(df_list)): page_data = df[ls].values.tolist(); pdf_data = pdf_data + page_data
                 data1_pdf = pd.DataFrame(pdf_data); repete = data1_pdf.shape[1]-len(data_tab_cols)
+                
                 for _ in range(repete): data_tab_cols.append('column_added')
                 pdf_data = pd.DataFrame(pdf_data,columns = data_tab_cols); data_pdf = pdf_data.replace(np.nan,''); com_table = data_pdf; new_com_table = data_pdf
             
             elif min(row_index) >= 2:
                 test_data1 = test_data.values.tolist(); row_value = min(row_index); data_col_list = test_data1[row_value] + test_data1[row_value+1]; columns_list=[]; row_columns=[]
                 for elem in range(len(data_col_list)): list_txt = list(str(data_col_list[elem]).split()); columns_list = columns_list + list_txt
+                
                 for elem in range(len(columns_list)):
                     if columns_list[elem] in col_list: col_name = columns_list[elem]; row_columns.append(col_name)
                 data1 = df_list[1]; data1 = data1.values.tolist()
+                
                 for lst_len in range(len(df_list)): page_data = df_list[lst_len]; page_data = page_data.values.tolist(); data1 = data1 + page_data
                 pdf_data1 = pd.DataFrame(data1); repete = pdf_data1.shape[1]-len(row_columns)
+                
                 for _ in range(repete): row_columns.append('column_added')
                 pdf_data = pd.DataFrame(data1,columns = row_columns); pdf_data = pdf_data.replace(np.nan,''); com_table = pdf_data; new_com_table = pdf_data
             
