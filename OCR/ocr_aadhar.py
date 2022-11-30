@@ -2,14 +2,17 @@ import pytesseract, re, json
 from PIL import Image
 
 def aadhar_read_data(image):
-    
     pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"    
     
+    # validity of input image
     try:
         img = Image.open(image)
-
+    
+    # test for image readability
         try:
             text = pytesseract.image_to_string(img, lang ="eng")
+
+            # classification of uniqueness of the addhar card
             if "male" in text.lower():
                 res = text.split()
                 name, dob, adh, sex = None, None, None, None
