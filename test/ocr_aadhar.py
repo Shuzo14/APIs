@@ -2,7 +2,7 @@ import pytesseract, re, json
 from PIL import Image
 
 def aadhar_read_data(image):
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"    
+    #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"    
     
     # validity of input image
     try:

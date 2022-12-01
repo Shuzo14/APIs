@@ -4,7 +4,7 @@ from PIL import Image
 def vehicleRC_read_data(image):
     
     # Defining path to tesseract.exe and the image
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     
     try:
         img = Image.open(image)
