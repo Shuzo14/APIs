@@ -34,7 +34,15 @@ def vehicleRC_read_data(image):
                         
                     if ([w for w in _ if re.search("(Date of Birth|DOB|D.O.B.)$", w)]):    
                         dl_dob = x.split(':')[1].strip()
-                        #print(dob)
+                        dl_dob = dl_dob.rstrip()
+                        dl_dob = dl_dob.lstrip()
+                        dl_dob = dl_dob.replace('l', '/')
+                        dl_dob = dl_dob.replace('L', '/')
+                        dl_dob = dl_dob.replace('I', '/')
+                        dl_dob = dl_dob.replace('i', '/')
+                        dl_dob = dl_dob.replace('|', '/')
+                        dl_dob = dl_dob.replace('\"', '/1')
+                        # dl_dob = dl_dob.replace(" ", "")
                     
                 dl_data = {
                 'dl_data' : lines,
