@@ -5,7 +5,7 @@ from ocr_aadhar import aadhar_read_data
 from ocr_dl import vehicleRC_read_data
 from ocr_pan import pan_read_data
 
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+ALLOWED_EXTENSIONS = set(['pdf','png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
 
