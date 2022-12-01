@@ -158,13 +158,8 @@ def bank_statement_read(file_path, bank_name):
         }
 
         return bsr_data
-
-        return json_out[0]
     
     except:
         a = {'status':'Failed', 'message': 'PDF is not redable' }
         return a
-
-
-
     
