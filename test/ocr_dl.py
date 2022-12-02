@@ -1,10 +1,11 @@
-import pytesseract, ftfy, json, re
+import pytesseract, ftfy, re
+from flask import jsonify
 from PIL import Image
 
 def vehicleRC_read_data(image):
     
     # Defining path to tesseract.exe and the image
-    #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     
     try:
         img = Image.open(image)
@@ -34,7 +35,15 @@ def vehicleRC_read_data(image):
                         
                     if ([w for w in _ if re.search("(Date of Birth|DOB|D.O.B.)$", w)]):    
                         dl_dob = x.split(':')[1].strip()
-                        #print(dob)
+                        dl_dob = dl_dob.rstrip()
+                        dl_dob = dl_dob.lstrip()
+                        dl_dob = dl_dob.replace('l', '/')
+                        dl_dob = dl_dob.replace('L', '/')
+                        dl_dob = dl_dob.replace('I', '/')
+                        dl_dob = dl_dob.replace('i', '/')
+                        dl_dob = dl_dob.replace('|', '/')
+                        dl_dob = dl_dob.replace('\"', '/1')
+                        # dl_dob = dl_dob.replace(" ", "")
                     
                 dl_data = {
                 'dl_data' : lines,
@@ -45,14 +54,17 @@ def vehicleRC_read_data(image):
                 return dl_data
             
             else:
-                a = {'status':'Failed', 'message': 'Please provide a driving license image'}
-                return a
-        
+                resp = jsonify({'status':'failed',' message':'Please provide a driving license image'})
+                resp.status_code = 400
+                return resp
+
         except:
-            a = {'status':'Failed', 'message': 'Invalid Image' }
-            return a
-    
+            resp = jsonify({'status':'failed',' message':'Image is not readable'})
+            resp.status_code = 400
+            return resp
+
     except:
-        a = {'status':'Failed', 'message': 'Invalid Image' }
-        return a
+        resp = jsonify({'status':'failed',' message':'Invalid image'})
+        resp.status_code = 400
+        return resp
 

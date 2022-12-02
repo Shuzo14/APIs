@@ -1,8 +1,9 @@
-import pytesseract, re, json
+import pytesseract, re
+from flask import jsonify
 from PIL import Image
 
 def aadhar_read_data(image):
-    #pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"    
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"    
     
     # validity of input image
     try:
@@ -72,13 +73,16 @@ def aadhar_read_data(image):
                 return data
             
             else:
-                a = {'status':'Failed', 'message': 'Please provide an addhar card image' }
-                return a
+                resp = jsonify({'status':'failed',' message':'Please provide an aadhar card image'})
+                resp.status_code = 400
+                return resp
 
         except:
-            a = {'status':'Failed', 'message': 'Unable to read data from image' }
-            return a
+            resp = jsonify({'status':'failed',' message':'Image is not readable'})
+            resp.status_code = 400
+            return resp
 
     except:
-        a = {'status':'Failed', 'message': 'Invalid Image' }
-        return a
+        resp = jsonify({'status':'failed',' message':'Invalid image'})
+        resp.status_code = 400
+        return resp
