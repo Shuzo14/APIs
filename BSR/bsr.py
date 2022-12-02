@@ -1,4 +1,5 @@
 import numpy as np, tabula, pandas as pd, operator as op, sys, json
+from flask import jsonify
 
 def json_bankstatements(json_list):
     json_output = []
@@ -160,6 +161,7 @@ def bank_statement_read(file_path, bank_name):
         return bsr_data
     
     except:
-        a = {'status':'Failed', 'message': 'PDF is not redable' }
-        return a
+        resp = jsonify({'status':'failed', 'message' : 'Allowed file types are png, jpg, jpeg, gif'})
+        resp.status_code = 400
+        return resp
     
