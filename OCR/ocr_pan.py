@@ -1,4 +1,5 @@
-import pytesseract, re, json
+import pytesseract, re
+from flask import jsonify
 from PIL import Image
 
 def findword(textlist, wordstring):
@@ -103,14 +104,17 @@ def pan_read_data(image):
                 return data
 
             else:
-                a = {'status':'Failed', 'message': 'Please provide a pan card image'}
-                return a
+                resp = jsonify({'status':'failed',' message':'Please provide a pan image'})
+                resp.status_code = 400
+                return resp
 
         except:
-            a = {'status':'Failed', 'message': 'Invalid Image' }
-            return a
+            resp = jsonify({'status':'failed',' message':'Image is not readable'})
+            resp.status_code = 400
+            return resp
 
     except:
-        a = {'status':'Failed', 'message': 'Invalid Image' }
-        return a
+        resp = jsonify({'status':'failed',' message':'Invalid image'})
+        resp.status_code = 400
+        return resp
 

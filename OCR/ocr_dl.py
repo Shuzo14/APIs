@@ -1,4 +1,5 @@
-import pytesseract, ftfy, json, re
+import pytesseract, ftfy, re
+from flask import jsonify
 from PIL import Image
 
 def vehicleRC_read_data(image):
@@ -53,14 +54,17 @@ def vehicleRC_read_data(image):
                 return dl_data
             
             else:
-                a = {'status':'Failed', 'message': 'Please provide a driving license image'}
-                return a
-        
+                resp = jsonify({'status':'failed',' message':'Please provide a driving license image'})
+                resp.status_code = 400
+                return resp
+
         except:
-            a = {'status':'Failed', 'message': 'Invalid Image' }
-            return a
-    
+            resp = jsonify({'status':'failed',' message':'Image is not readable'})
+            resp.status_code = 400
+            return resp
+
     except:
-        a = {'status':'Failed', 'message': 'Invalid Image' }
-        return a
+        resp = jsonify({'status':'failed',' message':'Invalid image'})
+        resp.status_code = 400
+        return resp
 

@@ -17,14 +17,14 @@ def help():
 
 def aadhar():
     if 'file' not in request.files:
-        resp = jsonify({'message':'No file part in the request'})
+        resp = jsonify({'status':'failed',' message':'No file part in the request'})
         resp.status_code = 400
         return resp
     
     file = request.files['file']
     
     if file.filename == '':
-        resp = jsonify({'message':'No file selected for uploading'})
+        resp = jsonify({'status':'failed', 'message':'No file selected for uploading'})
         resp.status_code = 400
         return resp
     
@@ -34,27 +34,27 @@ def aadhar():
         
         file.save(os.path.join('/tmp/', filename))
         os.rename('/tmp/'+filename, '/tmp/'+timestr+".png")
-        resp = jsonify({'message' : 'File successfully uploaded'})
+        resp = jsonify({'status':'success', 'message' : 'File successfully uploaded'})
         resp.status_code = 201
         aadhar_data = aadhar_read_data(file)
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
+        resp = jsonify({'status':'failed', 'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
 
 def pan():
     
     if 'file' not in request.files:
-        resp = jsonify({'message':'No file part in the request'})
+        resp = jsonify({'status':'failed', 'status':'failed', 'message':'No file part in the request'})
         resp.status_code = 400
         return resp
     
     file = request.files['file']
     
     if file.filename == '':
-        resp = jsonify({'message':'No file selected for uploading'})
+        resp = jsonify({'status':'failed', 'message':'No file selected for uploading'})
         resp.status_code = 400
         return resp
     
@@ -64,13 +64,13 @@ def pan():
         
         file.save(os.path.join('/tmp/', filename))
         os.rename('/tmp/'+filename, '/tmp/'+timestr+".png")
-        resp = jsonify({'message' : 'File successfully uploaded'})
+        resp = jsonify({'status':'success', 'message' : 'File successfully uploaded'})
         resp.status_code = 201
         aadhar_data = pan_read_data(file)
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
+        resp = jsonify({'status':'failed', 'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
 
@@ -84,7 +84,7 @@ def dlic():
     file = request.files['file']
     
     if file.filename == '':
-        resp = jsonify({'message':'No file selected for uploading'})
+        resp = jsonify({'status':'failed', 'message':'No file selected for uploading'})
         resp.status_code = 400
         return resp
     
@@ -94,12 +94,12 @@ def dlic():
         
         file.save(os.path.join('/tmp/', filename))
         os.rename('/tmp/'+filename, '/tmp/'+timestr+".png")
-        resp = jsonify({'message' : 'File successfully uploaded'})
+        resp = jsonify({'status':'success', 'message' : 'File successfully uploaded'})
         resp.status_code = 201
         aadhar_data = vehicleRC_read_data(file)
         return aadhar_data
     
     else:
-        resp = jsonify({'message' : 'Allowed file types are png, jpg, jpeg, gif'})
+        resp = jsonify({'status':'failed', 'message' : 'Allowed file types are png, jpg, jpeg, gif'})
         resp.status_code = 400
         return resp
